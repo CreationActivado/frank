@@ -1,0 +1,488 @@
+{
+  "user": {
+    "id": "usr_main",
+    "name": "Fran",
+    "mainCurrency": "EUR",
+    "monthlyReserveTarget": 1000,
+    "location": "España",
+    "lifeStage": "Construyendo estabilidad y evaluando permanencia en España",
+    "stageProgression": "construccion",
+    "incomeStructure": "Múltiples fuentes variables: changas (ej: bar Dejavu de unos amigos), oficios (electricidad), Rotuprint, software para clientes y plataformas de producción",
+    "activeProjects": [
+      "Creko",
+      "CTC",
+      "Rotuprint",
+      "Software para clientes",
+      "Software para producción"
+    ],
+    "communicationStyle": "directo_practico_firme",
+    "preferences": {
+      "confirmHighExpenses": true,
+      "highExpenseThreshold": 300,
+      "askOnAmbiguity": true,
+      "autoLearnRules": true,
+      "prioritizeReserveBeforeGrowth": true
+    }
+  },
+  "accounts": [
+    {
+      "id": "acc_cash",
+      "name": "Efectivo",
+      "type": "cash",
+      "balance": 145,
+      "currency": "EUR",
+      "active": true,
+      "updatedAt": "2026-09-05T03:47:00.000Z",
+      "notes": "Billetera en mano (Cuenta oficial actual - 145 € reales)"
+    },
+    {
+      "id": "acc_naranja",
+      "name": "Tarjeta Naranja",
+      "type": "credit_card",
+      "balance": 0,
+      "currency": "EUR",
+      "active": true,
+      "updatedAt": "2026-09-04T12:00:00.000Z",
+      "notes": "Tarjeta de crédito Naranja"
+    },
+    {
+      "id": "acc_galicia",
+      "name": "Tarjeta Galicia",
+      "type": "credit_card",
+      "balance": 0,
+      "currency": "EUR",
+      "active": true,
+      "updatedAt": "2026-09-04T12:00:00.000Z",
+      "notes": "Tarjeta Galicia"
+    },
+    {
+      "id": "acc_bank",
+      "name": "Cuenta bancaria",
+      "type": "bank_account",
+      "balance": 0,
+      "currency": "EUR",
+      "active": true,
+      "updatedAt": "2026-09-04T12:00:00.000Z",
+      "notes": "Cuenta bancaria principal"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_casa",
+      "name": "Casa",
+      "icon": "Home",
+      "color": "#3b82f6",
+      "subcategories": [
+        { "id": "sub_alquiler", "name": "Alquiler" },
+        { "id": "sub_luz", "name": "Luz" },
+        { "id": "sub_agua", "name": "Agua" },
+        { "id": "sub_internet", "name": "Internet" },
+        { "id": "sub_casa_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_alim",
+      "name": "Alimentación",
+      "icon": "Utensils",
+      "color": "#10b981",
+      "subcategories": [
+        { "id": "sub_super", "name": "Supermercado" },
+        { "id": "sub_comida", "name": "Comida" },
+        { "id": "sub_restaurantes", "name": "Restaurantes" },
+        { "id": "sub_alim_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_personal",
+      "name": "Personal",
+      "icon": "User",
+      "color": "#8b5cf6",
+      "subcategories": [
+        { "id": "sub_celular", "name": "Celular" },
+        { "id": "sub_higiene", "name": "Higiene" },
+        { "id": "sub_ropa", "name": "Ropa" },
+        { "id": "sub_ocio", "name": "Ocio" },
+        { "id": "sub_pers_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_transporte",
+      "name": "Transporte",
+      "icon": "Car",
+      "color": "#f59e0b",
+      "subcategories": [
+        { "id": "sub_combustible", "name": "Combustible" },
+        { "id": "sub_transporte_pub", "name": "Transporte público" },
+        { "id": "sub_mantenimiento", "name": "Mantenimiento auto" },
+        { "id": "sub_viajes", "name": "Viajes" },
+        { "id": "sub_trans_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_gen_ingresos",
+      "name": "Generación de ingresos",
+      "icon": "Briefcase",
+      "color": "#ec4899",
+      "subcategories": [
+        { "id": "sub_dejavu", "name": "Changa / Bar Dejavu" },
+        { "id": "sub_electricidad", "name": "Electricidad / Oficios" },
+        { "id": "sub_herramientas", "name": "Herramientas de trabajo" },
+        { "id": "sub_trabajo_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_rotuprint",
+      "name": "Rotuprint",
+      "icon": "Printer",
+      "color": "#6366f1",
+      "subcategories": [
+        { "id": "sub_materiales", "name": "Materiales" },
+        { "id": "sub_maquinaria", "name": "Maquinaria" },
+        { "id": "sub_rotu_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_software",
+      "name": "Software",
+      "icon": "Code",
+      "color": "#06b6d4",
+      "subcategories": [
+        { "id": "sub_licencias", "name": "Licencias" },
+        { "id": "sub_hosting", "name": "Servidores & Cloud" },
+        { "id": "sub_soft_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_inversiones",
+      "name": "Inversiones",
+      "icon": "TrendingUp",
+      "color": "#14b8a6",
+      "subcategories": [
+        { "id": "sub_crecimiento", "name": "Crecimiento" },
+        { "id": "sub_educacion", "name": "Educación & Cursos" },
+        { "id": "sub_inv_otros", "name": "Otros" }
+      ]
+    },
+    {
+      "id": "cat_otros",
+      "name": "Otros",
+      "icon": "Layers",
+      "color": "#6b7280",
+      "subcategories": [
+        { "id": "sub_imprevistos", "name": "Imprevistos" },
+        { "id": "sub_varios", "name": "Varios" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_creko",
+      "name": "Creko",
+      "description": "Proyecto Creko",
+      "status": "active",
+      "goal": "Desarrollo y lanzamiento inicial",
+      "accumulatedInvestment": 0,
+      "accumulatedIncome": 0,
+      "accumulatedExpenses": 0,
+      "progress": 25,
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "proj_ctc",
+      "name": "CTC",
+      "description": "Proyecto CTC (Recordatorio: CTC es solamente un proyecto, no genera ingresos automáticamente sin transacción real)",
+      "status": "active",
+      "goal": "Ejecución de hitos clave",
+      "accumulatedInvestment": 0,
+      "accumulatedIncome": 0,
+      "accumulatedExpenses": 0,
+      "progress": 40,
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "proj_rotuprint",
+      "name": "Rotuprint",
+      "description": "Proyecto Rotuprint de gráfica y producción",
+      "status": "active",
+      "goal": "Optimización de producción y stock",
+      "accumulatedInvestment": 0,
+      "accumulatedIncome": 0,
+      "accumulatedExpenses": 0,
+      "progress": 50,
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "proj_soft_clientes",
+      "name": "Software de clientes",
+      "description": "Desarrollo de software y soluciones para clientes externos",
+      "status": "active",
+      "goal": "Entregas a clientes",
+      "accumulatedInvestment": 0,
+      "accumulatedIncome": 0,
+      "accumulatedExpenses": 0,
+      "progress": 50,
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "proj_soft_produccion",
+      "name": "Software de producción",
+      "description": "Sistemas internos y plataformas en producción",
+      "status": "active",
+      "goal": "Estabilidad y escalabilidad",
+      "accumulatedInvestment": 0,
+      "accumulatedIncome": 0,
+      "accumulatedExpenses": 0,
+      "progress": 70,
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_initial_cash_180",
+      "type": "income",
+      "amount": 180,
+      "currency": "EUR",
+      "categoryId": "cat_gen_ingresos",
+      "paymentMethodId": "acc_cash",
+      "description": "Saldo inicial en efectivo",
+      "date": "2026-09-04",
+      "status": "confirmed",
+      "source": "manual",
+      "notes": "Saldo inicial en efectivo (4 de Septiembre)",
+      "userId": "usr_main",
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "tx_gasto_comida_35",
+      "type": "expense",
+      "amount": 35,
+      "currency": "EUR",
+      "categoryId": "cat_alim",
+      "subcategoryId": "sub_comida",
+      "paymentMethodId": "acc_cash",
+      "description": "Comida y etc.",
+      "date": "2026-09-04",
+      "status": "confirmed",
+      "source": "manual",
+      "notes": "Gasto en comida y etc (ayer) registrado por Fran",
+      "userId": "usr_main",
+      "createdAt": "2026-09-04T20:30:00.000Z",
+      "updatedAt": "2026-09-04T20:30:00.000Z"
+    }
+  ],
+  "pendingIncomes": [],
+  "futureExpenses": [],
+  "reserve": {
+    "targetAmount": 1000,
+    "currentAmount": 0,
+    "percentage": 0,
+    "targetDate": "2026-12-03",
+    "accountIds": [],
+    "notes": "Reserva de seguridad personal"
+  },
+  "goals": [
+    {
+      "id": "goal_reserva_1000",
+      "name": "Llegar a 1.000 € de reserva",
+      "targetAmount": 1000,
+      "currentAmount": 0,
+      "status": "in_progress",
+      "priority": "high",
+      "createdAt": "2026-09-04T11:33:41.394Z"
+    }
+  ],
+  "memory": [
+    {
+      "id": "mem_context_espana",
+      "type": "context",
+      "priority": "global",
+      "classification": "confirmed_fact",
+      "key": "ubicacion_espana",
+      "value": "El usuario reside en España y está construyendo su etapa de estabilidad y permanencia.",
+      "description": "Contexto real: intentando radicarse y estabilizarse en España (no es un simple viaje)",
+      "usageCount": 10,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_work_variable_incomes",
+      "type": "work_style",
+      "priority": "global",
+      "classification": "confirmed_fact",
+      "key": "ingresos_variables",
+      "value": "Ingresos variables por múltiples vías: changas, oficios (electricidad), Rotuprint, software para clientes y plataformas propias.",
+      "description": "Estructura de ingresos no lineal: la estabilidad se evalúa semana a semana y mes a mes.",
+      "usageCount": 8,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_ctc_rule_fundamental",
+      "type": "financial_rule",
+      "priority": "global",
+      "classification": "confirmed_fact",
+      "key": "regla_ctc_no_es_ingreso",
+      "value": "CTC es un PROYECTO. No debe aparecer como ingreso simplemente porque exista. Solo cuenta ante transacciones reales.",
+      "description": "Separación estricta entre proyectos y fuentes de ingreso automático.",
+      "usageCount": 12,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_rule_stability_first",
+      "type": "financial_rule",
+      "priority": "global",
+      "classification": "confirmed_fact",
+      "key": "primero_estabilidad_despues_crecimiento",
+      "value": "Primero estar estable. Después generar. Después construir. Después crecer. Nunca sacrificar la reserva básica por proyectos.",
+      "description": "Regla maestra de toma de decisiones financieras.",
+      "usageCount": 9,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_pref_communication",
+      "type": "preference",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "comunicacion_directa_firme",
+      "value": "Directo, claro, práctico, informal, en español y firme. No complaciente: avisar si no conviene gastar.",
+      "description": "Estilo de respuesta del asistente.",
+      "usageCount": 7,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_etapa_construccion",
+      "type": "context",
+      "priority": "temporary_context",
+      "classification": "temporary_context",
+      "isTemporary": true,
+      "key": "etapa_construccion_espana",
+      "value": "Convirtiendo una situación todavía inestable en una situación estable.",
+      "description": "Momento vital actual del usuario.",
+      "usageCount": 5,
+      "createdAt": "2026-09-04T12:00:00.000Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_naranja",
+      "type": "payment_method_alias",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "la naranja",
+      "value": "Tarjeta Naranja",
+      "targetData": { "paymentMethodId": "acc_naranja" },
+      "description": "Mapea la expresión coloquial \"la Naranja\" a Tarjeta Naranja",
+      "usageCount": 3,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_galicia",
+      "type": "payment_method_alias",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "galicia",
+      "value": "Tarjeta Galicia",
+      "targetData": { "paymentMethodId": "acc_galicia" },
+      "description": "Mapea la expresión coloquial \"Galicia\" a Tarjeta Galicia",
+      "usageCount": 2,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_efectivo",
+      "type": "payment_method_alias",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "efectivo",
+      "value": "Efectivo",
+      "targetData": { "paymentMethodId": "acc_cash" },
+      "description": "Mapea \"efectivo\" o \"en mano\" a la cuenta Efectivo",
+      "usageCount": 5,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_nafta",
+      "type": "category_rule",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "nafta",
+      "value": "Transporte → Combustible",
+      "targetData": { "categoryId": "cat_transporte", "subcategoryId": "sub_combustible" },
+      "description": "Mapea \"nafta\" o \"combustible\" o \"gasolina\" a Transporte / Combustible",
+      "usageCount": 2,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_super",
+      "type": "category_rule",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "super",
+      "value": "Alimentación → Supermercado",
+      "targetData": { "categoryId": "cat_alim", "subcategoryId": "sub_super" },
+      "description": "Mapea \"super\" o \"supermercado\" a Alimentación / Supermercado",
+      "usageCount": 2,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_rotuprint_proj",
+      "type": "project_rule",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "rotuprint",
+      "value": "Proyecto Rotuprint",
+      "targetData": { "projectId": "proj_rotuprint", "categoryId": "cat_rotuprint" },
+      "description": "Mapea menciones de \"Rotuprint\" o \"materiales para Rotuprint\" al proyecto Rotuprint",
+      "usageCount": 2,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T11:33:41.394Z"
+    },
+    {
+      "id": "mem_ctc_proj",
+      "type": "project_rule",
+      "priority": "user_preference",
+      "classification": "user_preference",
+      "key": "ctc",
+      "value": "Proyecto CTC",
+      "targetData": { "projectId": "proj_ctc" },
+      "description": "Proyecto CTC (recuerda que NO es fuente automática de ingresos)",
+      "usageCount": 4,
+      "createdAt": "2026-09-04T11:33:41.394Z",
+      "updatedAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "mem_dejavu",
+      "type": "category_rule",
+      "priority": "user_preference",
+      "classification": "confirmed_fact",
+      "key": "dejavu",
+      "value": "Generación de ingresos → Changa / Bar Dejavu",
+      "targetData": { "categoryId": "cat_gen_ingresos", "subcategoryId": "sub_dejavu" },
+      "description": "Bar de amigos donde Fran hace changas e ingresos de trabajo",
+      "usageCount": 1,
+      "createdAt": "2026-09-04T13:00:00.000Z",
+      "updatedAt": "2026-09-04T13:00:00.000Z"
+    },
+    {
+      "id": "mem_electricidad",
+      "type": "category_rule",
+      "priority": "user_preference",
+      "classification": "confirmed_fact",
+      "key": "electricidad",
+      "value": "Generación de ingresos → Electricidad / Oficios",
+      "targetData": { "categoryId": "cat_gen_ingresos", "subcategoryId": "sub_electricidad" },
+      "description": "Trabajos y oficios de electricista",
+      "usageCount": 1,
+      "createdAt": "2026-09-04T13:00:00.000Z",
+      "updatedAt": "2026-09-04T13:00:00.000Z"
+    }
+  ],
+  "undoStack": []
+}
